@@ -4,3 +4,5 @@ so how you can use it?
 please follow the instructions below.
 ## Clone the code 
 you can get the code by cloning it with terminal using the command git clone https://github.com/ScriptKiddiesS/counterGui.git or you can just download it 
+## install Requiremements 
+you make sure that you are installed all libraries that using on this code, if not just run this command pip install -r requiremements.txt
