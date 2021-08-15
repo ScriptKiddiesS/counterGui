@@ -27,7 +27,13 @@ class MainWindow(QMainWindow) :
         self.shadow.setColor(QColor(0, 248, 136, 150))
 
         self.ui.centralwidget.setGraphicsEffect(self.shadow)
-        #create fuction that help us to move our interface on the desktop
+    
+        self.execute()
+
+        self.show()
+    
+    def execute(self):
+        #create function that help us to move our interface on the desktop
         def moveWindow(cursor) : 
             if self.isMaximized()==False:
                 if cursor.buttons()==Qt.LeftButton : 
@@ -51,9 +57,6 @@ class MainWindow(QMainWindow) :
         self.ui.start.clicked.connect(self.start)
         self.ui.stop.clicked.connect(self.pause)
         self.ui.reset.clicked.connect(self.reset)
-
-
-        self.show()
 
     def mousePressEvent(self, event):
 
